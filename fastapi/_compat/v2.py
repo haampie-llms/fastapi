@@ -15,7 +15,8 @@ from typing import (
     get_origin,
 )
 
-from fastapi._compat import lenient_issubclass, shared
+from fastapi._compat import shared
+from fastapi._compat.shared import lenient_issubclass
 from fastapi.openapi.constants import REF_TEMPLATE
 from fastapi.types import IncEx, ModelNameMap, UnionType
 from pydantic import BaseModel, ConfigDict, Field, TypeAdapter, create_model
